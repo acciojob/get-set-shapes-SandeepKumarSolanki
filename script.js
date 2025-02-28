@@ -21,7 +21,7 @@ class Rectangle {
 	}
 
 	
-	Area(){
+	getArea(){
 		return (getWidth()*getHeight());
 	}
 }
@@ -32,7 +32,7 @@ class Square extends Rectangle {
 		this.side = side;
 	}
 
-	calculatePerimeter(){
+	getPerimeter(){
 		return 4 * this.side;
 	}
 	
@@ -41,8 +41,8 @@ class Square extends Rectangle {
 
 // Creating a Rectangle instance
 const rectangle = new Rectangle(5, 10);
-console.log(rectangle.width); // Output: 5
-console.log(rectangle.height); // Output: 10
+console.log(rectangle.getWidth); // Output: 5
+console.log(rectangle.getHeight); // Output: 10
 console.log(rectangle.getArea()); // Output: 50
 
 // Creating a Square instance
